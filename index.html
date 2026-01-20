@@ -503,7 +503,8 @@
                 <input type="hidden" name="_cc" value="mdtajuddin69@gmail.com">
                 <!-- Honeypot for spam protection -->
                 <input type="text" name="_gotcha" style="display:none">
-                <input type="submit" value="Submit" class="send" id="submitBtn">
+                <!-- <input type="submit" value="Submit" class="send" id="submitBtn"> -->
+                <input type="submit" value="Send Messages" class="send" id="submitBtn">
             </form>
         </div>
     </section>
@@ -518,52 +519,6 @@
     <script src="script/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <!-- Formspree Form Handler Script -->
-    <script>
-        // Formspree Form Submission Handler
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contactForm');
-            const submitBtn = document.getElementById('submitBtn');
-            
-            if(form) {
-                form.addEventListener('submit', function(e) {
-                    // Change button text to show loading state
-                    if(submitBtn) {
-                        submitBtn.value = 'Sending...';
-                        submitBtn.disabled = true;
-                        submitBtn.style.opacity = '0.8';
-                    }
-                    
-                    // The form will now submit to Formspree
-                    // Formspree will handle the redirect
-                    
-                    // Optional: Add a timeout to reset button if submission fails
-                    setTimeout(function() {
-                        if(submitBtn) {
-                            submitBtn.value = 'Submit';
-                            submitBtn.disabled = false;
-                            submitBtn.style.opacity = '1';
-                        }
-                    }, 5000);
-                });
-            }
-            
-            // Typed.js for home section
-            var typed = new Typed(".text", {
-                strings: ["Full Stack Developer", "Web Developer", "Machine Learning Enthusiast", "UI/UX Designer"],
-                typeSpeed: 100,
-                backSpeed: 100,
-                backDelay: 1000,
-                loop: true
-            });
-            
-            // Initialize AOS
-            AOS.init({
-                duration: 1000,
-                once: true
-            });
-        });
-    </script>
 </body>
 
 </html>
