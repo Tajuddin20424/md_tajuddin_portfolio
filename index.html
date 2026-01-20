@@ -19,9 +19,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- favicon link -->
     <link rel="icon" type="image/png" href="styles/img/favicon/Taj.png">
+
+    <style>
+        /* Temporary inline styles to ensure visibility */
+        body {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .home-content h3,
+        .home-content h1,
+        .home-content p,
+        .home-sci a,
+        .btn-box {
+            opacity: 1 !important;
+        }
+    </style>
 </head>
 
-<body>
+<body style="opacity: 1; visibility: visible;">
     <!-- Header Section Part Start -->
     <header class="header">
         <a href="#" class="logo">
@@ -504,22 +520,46 @@
                 <!-- Honeypot for spam protection -->
                 <input type="text" name="_gotcha" style="display:none">
                 <!-- <input type="submit" value="Submit" class="send" id="submitBtn"> -->
-                <input type="submit" value="Submit" class="send" id="submitBtn">
+                <input type="submit" class="btn-box" value="Send Massages" class="send" id="submitBtn">
             </form>
         </div>
     </section>
     <!-- Contact section part end -->
 
-    <div class="last-text">
+    <!-- <div class="last-text">
         <P>© 2026 — Developed with ❤️💕 by Md. Tajuddin. All Rights Reserved.</P>
         <a href="#home" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    </div> -->
+
+    <div class="last-text">
+        <p>© 2026 — Developed with ❤️💕 by Md. Tajuddin. All Rights Reserved.</p>
+        <a href="#home" class="top" style="
+            position: fixed;
+            bottom: 2.1rem;
+            right: 2.1rem;
+            display: none;
+            z-index: 1000;
+        ">
+            <i class="bx bx-up-arrow-alt" style="
+                color: #000000;
+                background: #0ef;
+                font-size: 20px;
+                padding: 10px;
+                border-radius: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            "></i>
+        </a>
     </div>
 
     <!-- JavaScript Files -->
     <script src="script/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-   
+
+    <!--  -->
+ 
+
 </body>
 
 </html>
